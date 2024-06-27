@@ -3,8 +3,9 @@ class StringCalculator {
     if (numbers === "") {
       return 0;
     }
-    return parseInt(numbers);
+    const numArray = numbers.split(",").map(Number);
+    return numArray.reduce((acc, curr) => acc + curr, 0);
   }
 }
 
-export default StringCalculator;
+module.exports = StringCalculator;

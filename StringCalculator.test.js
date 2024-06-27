@@ -1,4 +1,5 @@
-test("should return the number itself for a single number", () => {
+const StringCalculator = require("./StringCalculator");
+test("should return the sum of two numbers", () => {
   const calculator = new StringCalculator();
-  expect(calculator.add("1")).toBe(1);
+  expect(calculator.add("1,2")).toBe(3);
 });
